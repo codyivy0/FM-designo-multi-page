@@ -1,0 +1,31 @@
+.navbar {
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.logo {
+  margin-top: 0.4rem;
+}
+.desktopNav {
+  display: none;
+}
+.desktopNav a {
+  text-decoration: none;
+  color: black;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+@media (min-width: 770px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+  .desktopNav {
+    display: flex;
+    gap: 2rem;
+  }
+}
