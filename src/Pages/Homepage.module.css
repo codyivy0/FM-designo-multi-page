@@ -1,0 +1,38 @@
+.banner {
+  background-color: var(--peach);
+  color: white;
+  background-image: url("/svg/bg-pattern-hero-home.svg"),
+    url("/images/home/image-hero-phone.png");
+  background-position: center left, center 250px;
+  background-repeat: no-repeat;
+  padding: 3rem 1rem 27rem 1rem;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  padding-inline: 0.5rem;
+}
+
+@media (min-width: 770px) {
+  .banner {
+    border-radius: 10px;
+    padding-inline: 5rem;
+  }
+  .banner h1 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .banner {
+    text-align: left;
+    padding: 3rem 4rem 5rem 4rem;
+    background-position: right, right 150px;
+    background-size: contain, auto;
+  }
+  .bannerText {
+    padding-right: 25rem;
+  }
+}

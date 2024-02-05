@@ -89,3 +89,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+@media (min-width: 770px)
+ {
+  body {
+    padding-inline: 2rem;
+  }
+}
