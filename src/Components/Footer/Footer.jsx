@@ -15,13 +15,30 @@ const Footer = () => {
         </NavLink>
         <div className={styles.footerDividerMobile}></div>
         <div className={styles.footerLinks}>
-          <NavLink className={styles.footerLink} to={"/about"}>
+          <NavLink
+            className={({ isActive }) =>
+              ` ${isActive ? styles.active : ""} ${styles.footerLink} `
+            }
+            to={"/about"}
+          >
             OUR COMPANY
           </NavLink>
-          <NavLink className={styles.footerLink} to={"/locations"}>
+          <NavLink
+            className={({ isActive }) =>
+              `${isActive ? styles.active : ""} ${styles.footerLink}  `
+            }
+            exact
+            to={"/locations"}
+          >
             LOCATIONS
           </NavLink>
-          <NavLink className={styles.footerLink} to={"/contact"}>
+          <NavLink
+            className={({ isActive }) =>
+              `${isActive ? styles.active : ""} ${styles.footerLink} `
+            }
+            exact
+            to={"/contact"}
+          >
             CONTACT
           </NavLink>
         </div>
