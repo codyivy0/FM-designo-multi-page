@@ -1,10 +1,12 @@
+import Footer from "../Components/Footer/Footer";
 
 const Homepage = () => {
   return (
-    <div>
+    <main>
       HomePage
-    </div>
-  )
+      <Footer />
+    </main>
+  );
 };
 
-export default Homepage ;
+export default Homepage;
