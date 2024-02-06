@@ -2,6 +2,9 @@ import { NavLink } from "react-router-dom";
 import Button from "../Components/Button/Button";
 import Footer from "../Components/Footer/Footer";
 import styles from "./Homepage.module.css";
+import ProjectCards from "../Components/ProjectCards/ProjectCards";
+
+
 const Homepage = () => {
   return (
     <main>
@@ -18,6 +21,7 @@ const Homepage = () => {
           </NavLink>
         </div>
       </section>
+      <ProjectCards />
       <Footer />
     </main>
   );

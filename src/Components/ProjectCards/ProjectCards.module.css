@@ -1,0 +1,134 @@
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-inline: 1.5rem;
+  padding-block: 6rem;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem 3rem 2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.projectCard h1 {
+  font-weight: 400;
+}
+.projectCard p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.projectCard1 {
+  position: relative;
+  color: white;
+}
+
+.projectCard1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/home/mobile/image-web-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+  z-index: -1;
+  border-radius: 10px;
+}
+.projectCard2 {
+  position: relative;
+  color: white;
+}
+.projectCard2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/home/mobile/image-app-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+  z-index: -1;
+  border-radius: 10px;
+}
+.projectCard3 {
+  position: relative;
+  color: white;
+}
+.projectCard3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/home/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+@media (min-width: 770px) {
+  .projectCard1::before {
+    background-image: url("/images/home/tablet/image-web-design.jpg");
+  }
+  .projectCard2::before {
+    background-image: url("/images/home/tablet/image-app-design.jpg");
+  }
+  .projectCard3::before {
+    background-image: url("/images/home/tablet/image-graphic-design.jpg");
+  }
+}
+@media (min-width: 1100px) {
+  .cardsContainer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 9rem;
+    gap: 2rem;
+  }
+
+  .projectCard h1 {
+    font-size: 32px;
+  }
+  .projectCard1 {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    box-sizing: initial;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectCard2 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .projectCard3 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .projectCard1::before {
+    background-image: url("/images/home/desktop/image-web-design-large.jpg");
+  }
+  .projectCard2::before {
+    background-image: url("/images/home/desktop/image-app-design.jpg");
+  }
+  .projectCard3::before {
+    background-image: url("/images/home/desktop/image-graphic-design.jpg");
+  }
+}
