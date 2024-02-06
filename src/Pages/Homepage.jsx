@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import Button from "../Components/Button/Button";
-import Footer from "../Components/Footer/Footer";
+
 import styles from "./Homepage.module.css";
 import ProjectCards from "../Components/ProjectCards/ProjectCards";
 import InfoCards from "../Components/InfoCards/InfoCards";
+import FooterWithCard from "../Components/FooterWithCard/FooterWithCard";
 
 const Homepage = () => {
   return (
@@ -23,7 +24,7 @@ const Homepage = () => {
       </section>
       <ProjectCards />
       <InfoCards />
-      <Footer />
+      <FooterWithCard />
     </main>
   );
 };
