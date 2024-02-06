@@ -3,7 +3,7 @@ import Button from "../Components/Button/Button";
 import Footer from "../Components/Footer/Footer";
 import styles from "./Homepage.module.css";
 import ProjectCards from "../Components/ProjectCards/ProjectCards";
-
+import InfoCards from "../Components/InfoCards/InfoCards";
 
 const Homepage = () => {
   return (
@@ -22,6 +22,7 @@ const Homepage = () => {
         </div>
       </section>
       <ProjectCards />
+      <InfoCards />
       <Footer />
     </main>
   );

@@ -43,6 +43,10 @@
   filter: brightness(0.5);
   z-index: -1;
   border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+.projectCard1:hover::before {
+  filter: brightness(1) sepia(0.5);
 }
 .projectCard2 {
   position: relative;
@@ -61,6 +65,10 @@
   filter: brightness(0.5);
   z-index: -1;
   border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+.projectCard2:hover::before {
+  filter: brightness(1) sepia(0.5);
 }
 .projectCard3 {
   position: relative;
@@ -79,6 +87,10 @@
   filter: brightness(0.5);
   z-index: -1;
   border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+.projectCard3:hover::before {
+  filter: brightness(1) sepia(0.5);
 }
 
 @media (min-width: 770px) {
