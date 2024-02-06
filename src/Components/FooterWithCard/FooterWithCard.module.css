@@ -82,7 +82,7 @@ footer .footerContactInfo {
     margin-top: 15rem;
   }
   .footerCard {
-    padding-inline: 10rem;
+    padding-inline: 5rem;
     top: -50%;
   }
   .footerCard h1 {
@@ -117,7 +117,7 @@ footer .footerContactInfo {
 @media (min-width: 1100px) {
   footer {
     padding-inline: 10rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
   .footerContactInfo > :nth-child(2) {
     margin-right: 12rem;
@@ -129,6 +129,7 @@ footer .footerContactInfo {
     align-items: center;
     width: 80%;
     padding-inline: 5rem;
+    top: -60%;
   }
   .footerCard div {
     width: 50%;
