@@ -1,0 +1,75 @@
+.sectionLocations {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2rem;
+  gap: 3rem;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.locationName {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.locationBtn {
+  background-color: var(--peach);
+  color: white !important;
+}
+
+.imagesContainer {
+  position: relative;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/svg/bg-pattern-small-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+.circleBottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/svg/bg-pattern-small-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  transform: rotate(-90deg);
+}
+.circleTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/svg/bg-pattern-small-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 1100px) {
+  .sectionLocations {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-inline: 9rem;
+  }
+}

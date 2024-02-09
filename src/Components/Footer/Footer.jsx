@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footerNoCard}>
       <section className={styles.footerNav}>
         <NavLink to={"/"}>
           <img

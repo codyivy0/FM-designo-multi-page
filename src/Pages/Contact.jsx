@@ -1,11 +1,12 @@
 import Footer from "../Components/Footer/Footer";
+import LocationCards from "../Components/LocationCards/LocationCards";
 
 const Contact = () => {
   return (
-    <div>
-      Contact
+    <main>
+      <LocationCards />
       <Footer />
-    </div>
+    </main>
   );
 };
 

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const FooterWithCard = () => {
   return (
-    <footer>
+    <footer className={styles.footerWithCard}>
       <section className={styles.footerCard}>
         <div>
           <h1>Lets talk about your project</h1>

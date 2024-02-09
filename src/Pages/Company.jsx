@@ -1,7 +1,6 @@
 import styles from "./Company.module.css";
 import FooterWithCard from "../Components/FooterWithCard/FooterWithCard";
-import Button from "../Components/Button/Button";
-import { NavLink } from "react-router-dom";
+import LocationCards from "../Components/LocationCards/LocationCards";
 
 const Company = () => {
   return (
@@ -22,6 +21,7 @@ const Company = () => {
               </p>
             </div>
           </section>
+
           <section className={styles.sectionWorldClass}>
             <div className={styles.worldClassImageHolder}></div>
             <div className={styles.worldClassText}>
@@ -41,40 +41,9 @@ const Company = () => {
               </p>
             </div>
           </section>
-          <section className={styles.sectionLocations}>
-            <div className={styles.location}>
-              <div className={`${styles.imagesContainer} ${styles.circleTop}`}>
-                <img src="/svg/illustration-canada.svg" alt="Canada" />
-              </div>
-              <p className={styles.locationName}>Canada</p>
-              <NavLink to={"/locations"} onClick={() => window.scroll(0, 0)}>
-                <Button className={styles.locationBtn}>SEE LOCATION</Button>
-              </NavLink>
-            </div>
-            <div className={styles.location}>
-              <div className={`${styles.imagesContainer} ${styles.circle}`}>
-                <img src="/svg/illustration-australia.svg" alt="Australia" />
-              </div>
-              <p className={styles.locationName}>Australia</p>
-              <NavLink to={"/locations"} onClick={() => window.scroll(0, 0)}>
-                <Button className={styles.locationBtn}>SEE LOCATION</Button>
-              </NavLink>
-            </div>
-            <div className={styles.location}>
-              <div
-                className={`${styles.imagesContainer} ${styles.circleBottom}`}
-              >
-                <img
-                  src="/svg/illustration-united-kingdom.svg"
-                  alt="United Kingdom"
-                />
-              </div>
-              <p className={styles.locationName}>United Kingdom</p>
-              <NavLink to={"/locations"} onClick={() => window.scroll(0, 0)}>
-                <Button className={styles.locationBtn}>SEE LOCATION</Button>
-              </NavLink>
-            </div>
-          </section>
+
+          <LocationCards />
+
           <section className={styles.sectionRealDeal}>
             <div className={styles.realDealImageHolder}></div>
             <div className={styles.worldClassText}>
