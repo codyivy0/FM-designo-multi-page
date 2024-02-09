@@ -52,7 +52,7 @@ footer .footerContactInfo {
   color: var(--peach) !important;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   footer {
     padding-inline: 2rem;
   }

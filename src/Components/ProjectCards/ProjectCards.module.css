@@ -90,10 +90,10 @@
   transition: filter 0.3s ease;
 }
 .projectCard3:hover::before {
-  filter: brightness(1) sepia(0.5);
+  filter: brightness(1);
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .projectCard1::before {
     background-image: url("/images/home/tablet/image-web-design.jpg");
   }
@@ -108,7 +108,7 @@
   .cardsContainer {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    padding-inline: 9rem;
+    margin-inline: 8rem;
     gap: 2rem;
   }
 

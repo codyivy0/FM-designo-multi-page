@@ -76,7 +76,7 @@ footer .footerContactInfo {
   color: var(--peach) !important;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   footer {
     padding-inline: 2rem;
     margin-top: 15rem;
@@ -142,8 +142,5 @@ footer .footerContactInfo {
   .inTouchBtn {
     margin: 0;
     padding: 0 !important;
-  }
-  .btn {
-    color: red;
   }
 }

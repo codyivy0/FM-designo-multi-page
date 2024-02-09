@@ -11,6 +11,7 @@ const Footer = () => {
             className={styles.footerLogo}
             alt="designo logo"
             height={27}
+            onClick={() => window.scroll(0, 0)}
           />
         </NavLink>
         <div className={styles.footerDividerMobile}></div>
@@ -20,6 +21,7 @@ const Footer = () => {
               ` ${isActive ? styles.active : ""} ${styles.footerLink} `
             }
             to={"/about"}
+            onClick={() => window.scroll(0, 0)}
           >
             OUR COMPANY
           </NavLink>
@@ -29,6 +31,7 @@ const Footer = () => {
             }
             exact
             to={"/locations"}
+            onClick={() => window.scroll(0, 0)}
           >
             LOCATIONS
           </NavLink>
@@ -38,6 +41,7 @@ const Footer = () => {
             }
             exact
             to={"/contact"}
+            onClick={() => window.scroll(0, 0)}
           >
             CONTACT
           </NavLink>

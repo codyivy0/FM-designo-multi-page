@@ -14,7 +14,9 @@ const FooterWithCard = () => {
           </p>
         </div>
         <NavLink to={"/contact"} className={styles.inTouchBtn}>
-          <Button className={styles.btn}>GET IN TOUCH</Button>
+          <Button className={styles.btn} onClick={() => window.scrollTo(0, 0)}>
+            GET IN TOUCH
+          </Button>
         </NavLink>
       </section>
 
@@ -25,6 +27,7 @@ const FooterWithCard = () => {
             className={styles.footerLogo}
             alt="designo logo"
             height={27}
+            onClick={() => window.scroll(0, 0)}
           />
         </NavLink>
         <div className={styles.footerDividerMobile}></div>
@@ -34,6 +37,7 @@ const FooterWithCard = () => {
               ` ${isActive ? styles.active : ""} ${styles.footerLink} `
             }
             to={"/about"}
+            onClick={() => window.scroll(0, 0)}
           >
             OUR COMPANY
           </NavLink>
@@ -43,6 +47,7 @@ const FooterWithCard = () => {
             }
             exact
             to={"/locations"}
+            onClick={() => window.scroll(0, 0)}
           >
             LOCATIONS
           </NavLink>
@@ -52,6 +57,7 @@ const FooterWithCard = () => {
             }
             exact
             to={"/contact"}
+            onClick={() => window.scroll(0, 0)}
           >
             CONTACT
           </NavLink>
