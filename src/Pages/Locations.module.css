@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -71,7 +71,7 @@
       "canadaText canadaText canadaMap"
       "australiaMap australiaText australiaText"
       "UKText UKText UKMap";
-    padding-inline: 7rem;
+    padding-inline: 2rem;
     margin-bottom: 20rem;
   }
 
@@ -103,5 +103,11 @@
   }
   .imageHolder {
     height: 20rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .wrapper {
+    padding-inline: 7rem;
   }
 }
