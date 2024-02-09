@@ -1,8 +1,8 @@
-main {
+.wrapper {
   display: grid;
   grid-template-columns: 1fr;
 }
-main img {
+.wrapper img {
   width: 100%;
   object-fit: cover;
 }
@@ -138,8 +138,8 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  main {
-    gap: 1rem;
+  .wrapper {
+    gap: 2rem;
   }
   .sectionAboutUs {
     border-radius: 10px;
