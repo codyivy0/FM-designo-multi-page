@@ -1,9 +1,19 @@
-.WDWrapper {
+.appWrapper {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
   padding-inline: 2rem;
   gap: 2rem;
+}
+.banner {
+  background-color: var(--peach);
+  background-image: url("/svg/bg-pattern-design-pages-intro-mobile.svg");
+  background-position: top;
+  text-align: center;
+  color: white;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  margin-bottom: 2rem;
 }
 
 .navLinks {
@@ -35,11 +45,11 @@
   letter-spacing: 3px;
 }
 
-.projectCard2 {
+.projectCard1 {
   position: relative;
   color: white;
 }
-.projectCard2::before {
+.projectCard1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -54,7 +64,7 @@
   border-radius: 10px;
   transition: filter 0.3s ease;
 }
-.projectCard2:hover::before {
+.projectCard1:hover::before {
   filter: brightness(1) sepia(0.5);
 }
 .projectCard3 {
@@ -89,13 +99,12 @@
   }
 }
 @media (min-width: 1000px) {
-  .WDWrapper {
+  .appWrapper {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     margin-inline: 7rem;
     padding-inline: 0;
   }
-
   .navLinks {
     grid-template-columns: 1fr 1fr;
     margin-inline: 7rem;
