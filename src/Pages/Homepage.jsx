@@ -18,7 +18,7 @@ const Homepage = () => {
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <NavLink to={"/about"}>
+            <NavLink to={"/about"} onClick={() => window.scroll(0, 0)}>
               <Button>LEARN MORE</Button>
             </NavLink>
           </div>

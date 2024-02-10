@@ -13,10 +13,12 @@ const FooterWithCard = () => {
             how our expertise can help your business grow.
           </p>
         </div>
-        <NavLink to={"/contact"} className={styles.inTouchBtn}>
-          <Button className={styles.btn} onClick={() => window.scrollTo(0, 0)}>
-            GET IN TOUCH
-          </Button>
+        <NavLink
+          to={"/contact"}
+          className={styles.inTouchBtn}
+          onClick={() => window.scroll(0, 0)}
+        >
+          <Button className={styles.btn}>GET IN TOUCH</Button>
         </NavLink>
       </section>
 
