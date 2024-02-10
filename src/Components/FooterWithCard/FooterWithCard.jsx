@@ -77,8 +77,22 @@ const FooterWithCard = () => {
           <p className={styles.fw700}>P: +1 253-863-8967</p>
           <p className={styles.fw700}>M: contact@designo.co</p>
         </div>
-        <div>
-          <p>socials here</p>
+        <div className={styles.socials}>
+          <a href="https://www.facebook.com/">
+            <img src="/svg/icon-facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src="/svg/icon-youtube.svg" alt="youtube" />
+          </a>
+          <a href="https://twitter.com">
+            <img src="/svg/icon-twitter.svg" alt="twitter" />
+          </a>
+          <a href="https://www.pinterest.com/">
+            <img src="/svg/icon-pinterest.svg" alt="pinterest" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="/svg/icon-instagram.svg" alt="instagram" />
+          </a>
         </div>
       </section>
     </footer>

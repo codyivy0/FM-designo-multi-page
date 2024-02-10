@@ -69,6 +69,17 @@
   flex-direction: column;
 }
 
+.socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: auto;
+  margin-inline: 3rem;
+  height: 1.5rem;
+}
+a {
+  cursor: pointer;
+}
 .fw700 {
   font-weight: 700;
 }
